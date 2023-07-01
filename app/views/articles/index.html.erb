@@ -1,0 +1,12 @@
+<div>
+  <p>Wikinimous</p>
+  <p>New Article</p>
+</div>
+
+
+<ul>
+   <% @articles.each do |article| %>
+    <li><%= article.title %></li>
+    <p><%= article.content[..30] %>[more...]</p>
+  <% end %>
+</ul>
